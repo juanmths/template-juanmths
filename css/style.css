@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
+body{
+ 
+
+
+}
+
+
+
+/*Navar & Logo*/
+.navbar-ku{
+   background: linear-gradient(to right, rgba(255,33,205, .92), rgba(0,61,255, .92));
+
+
+}
+
+.logo{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+:root {
+  --mainColor: #C2C8F4;
+}
+nav .animasi-logo a {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+    background-repeat: repeat-x;
+    background-size: 100%;
+  color: white;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+nav .animasi-logo a:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+nav a:hover{
+  padding-bottom: .25em;
+  text-decoration: none;
+}
+
+
+/*End Navar & Logo*/
+
+/*Jumbotron*/
+.my-jumbotron{
+  background: linear-gradient(to right, rgba(255,33,205, .92), rgba(0,61,255, .92));
+
+}
+
+.jumbotron-bg{
+  background-size: cover;
+  background: url(../img/bg-jumbotron.jpg);
+  background-size: 1000;
+}
+
+.typed {
+  border-bottom: 2px solid #ffffff;
+}
+.typed-cursor{
+   opacity: 1;
+   animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.my-border{
+  border-bottom: 5px red;
+}
+/*End Jumbotron*/
+
+/*Gambar Zoom*/
+.kotak img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 100%;
+}
+
+.zoom-effect:hover .kotak img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+/*End Gambar Zoom*/
+
+/*Card*/
+.card-ku:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card a{
+  text-decoration: none;
+}
+/*End Card*/
+
+
+/*btn-search & toggle*/
+
+.btn-mobile{
+  display: none;
+}
+
+
+/*btn-search & toggle*/
+
+
+/*Syntax Highlighter*/
+.hljs{display:block;overflow-x:auto;padding:0.5em;color:#abb2bf;background:#282c34}
+.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}
+.hljs-doctag,.hljs-keyword,.hljs-formula{color:#c678dd}
+.hljs-section,.hljs-name,.hljs-selector-tag,.hljs-deletion,
+.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}
+.hljs-string,.hljs-regexp,.hljs-addition,.hljs-attribute,
+.hljs-meta-string{color:#98c379}.hljs-built_in,.hljs-class 
+.hljs-title{color:#e6c07b}.hljs-attr,.hljs-variable,
+.hljs-template-variable,.hljs-type,.hljs-selector-class,
+.hljs-selector-attr,.hljs-selector-pseudo,
+.hljs-number{color:#d19a66}.hljs-symbol,
+.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,
+.hljs-title{color:#61aeee}.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}
+/*End /*Syntax Highlighter*/*/
+
+
+
+/*Mobile*/
+
+@media only screen and (min-width: 768px) {
+
+  .mobile-img{
+    display: none;
+  }
+
+  .btn-mobile{
+  display: flex;
+}
+
+}
+
+/*End Mobile*/
